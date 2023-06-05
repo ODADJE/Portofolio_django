@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon PORTFOLIO</title>
+    <link rel="stylesheet" href="{% static 'css/style.css/' %}" />
+  </head>
+  <body>
+    <header class="topbar">
+      <p class="develop-by">Developed by Mr_Serge04</p>
+      <div class="header-btn">
+        <!-- <img src="/img/Sombre.jpg" title="Mode sombre" alt="" class="header-img"> -->
+        <a href="#top">Resume</a>
+      </div>
+    </header>
+    <main class="main" id="top">
+      <article class="presentation">
+        <h1>Serge ODADJE</h1>
+        <h2>Websites developer</h2>
+        <p>
+          Hello! I am a passionate web developer focused on creating modern and
+          high-performing web applications. I have strong experience in
+          front-end development using technologies such as HTML, CSS,
+          JavaScript, and React. I am also proficient in back-end development
+          using technologies such as Node.js. I am constantly seeking new
+          opportunities to learn and grow as a web developer. I strongly believe
+          that teamwork is key in creating exceptional products and I enjoy
+          working closely with design and product teams. I am eager to take on
+          new challenges and contribute to the creation of innovative web
+          products.
+        </p>
+        <div class="social">
+          <a href="blog/" target="_blank"
+            ><img
+              src="{% static 'img/twitter.jpg/' %}"
+              alt=""
+              class="social-img"
+          /></a>
+          <a
+            href="https://github.com/ODADJE"
+            title="Lien vers Github"
+            target="_blank"
+            ><img
+              src="{% static 'img/Github.jpg/' %}"
+              alt=""
+              class="social-img"
+          /></a>
+          <a href="" target="_blank"
+            ><img
+              src="{% static 'img/Linkdin.jpg/' %}"
+              alt=""
+              class="social-img"
+          /></a>
+        </div>
+        <div class="elipse">
+          <!--  <img src="img/Profil.jpg" alt=""> -->
+          <img src="{% static 'img/profile.png/' %}" alt="" />
+        </div>
+      </article>
+      <article class="service">
+        <h2>Service I offer</h2>
+        <p>
+          I already have a solid understanding of technologies such as HTML,
+          CSS, and JavaScript. I am also learning other technologies such as
+          React and Node.js to improve my front-end and back-end development
+          skills.
+        </p>
+        <div class="competance">
+          <!-- <div class="app">
+            <img src="img/Apps.png" alt="" />
+            <h2>App Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus. Maecenas eget
+            </p>
+          </div> -->
+          <div class="web">
+            <img src="{% static 'img/web.png/' %}" alt="" />
+            <h2>Web Development</h2>
+            <p>HTML,CSS, and JavaScript and ReactJS for the frontend.</p>
+            <p>Node.js for managing the backend of created applications.</p>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio">
+        <h2>Portfolio</h2>
+        <p>
+          I am proud to present the projects in my portfolio, each of which
+          showcases my technical skills and creativity. I approach each project
+          with a focus on solving real-world problems and delivering
+          high-quality results.From start to finish, I am dedicated to meeting
+          the needs of my clients and delivering a product that exceeds their
+          expectations. Whether you are an individual looking for a simple
+          website or a business in need of a complex software solution, I am
+          confident that I have the skills and expertise to deliver a project
+          that meets your needs.
+        </p>
+        <div class="portfolio-image">
+          <img src="{% static '/img/web1.png/' %}" alt="" />
+          <img src="{% static '/img/web3.png/' %}" alt="" />
+          <img src="{% static 'img/web2.png/' %}" alt="" />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

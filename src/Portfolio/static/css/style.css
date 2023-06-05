@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(Portfolio/static/fonts/Outfit-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Outfit_medium";
+  src: url(Portfolio/static/fonts/Outfit-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Outfit_light";
+  src: url(Portfolio/static/fonts/Outfit-Light.ttf);
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  z-index: 2;
+}
+
+.develop-by {
+  padding: 5px 10px;
+  font-family: Outfit_light;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.header-btn {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header-img {
+  width: 35px;
+  height: 35px;
+}
+.header-btn a {
+  margin-left: 15px;
+  width: 120px;
+  background: #ffb800;
+  border: 1px solid #ffb800;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1rem;
+  padding: 10px;
+  height: auto;
+  text-decoration: none;
+  font-family: Outfit_light;
+  color: #000000;
+  font-size: 20px;
+}
+
+.header-btn a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding-top: 5px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.presentation h1 {
+  font-family: Outfit;
+  font-weight: 900;
+  font-size: 128px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  color: rgba(255, 184, 0, 1);
+}
+
+.presentation h2 {
+  font-family: Outfit_medium;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.presentation p {
+  font-family: Outfit_light;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.social {
+  margin-top: 10px;
+}
+.social .social-img {
+  padding-left: 20px;
+}
+
+.elipse {
+  position: relative;
+  border: 2px solid linear-gradient(to bottom, rgba(255, 184, 0, 0.57), #fff);
+  border-radius: 100%;
+  margin-top: 40px;
+  width: 456px;
+  height: 456px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffb800, #fff);
+}
+
+.elipse img {
+  width: 456px;
+  height: 456px;
+}
+
+.service,
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.service h2,
+.portfolio h2 {
+  font-family: Outfit_medium;
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.service p,
+.portfolio p {
+  font-family: Outfit_light;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.5;
+  text-align: justify;
+}
+
+.competance {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.competance div {
+  margin-top: 50px;
+  background: rgba(255, 184, 0, 0.46);
+  width: 391px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 184, 0, 0.46);
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.competance div img {
+  width: 201px;
+  height: 201px;
+  margin-top: -50px;
+}
+
+.competance div h2 {
+  font-family: Outfit_medium;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.competance div p {
+  font-family: Outfit_light;
+  font-size: 12px;
+  line-height: 25px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.portfolio-image {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-image img {
+  width: 50%;
+}
+
+@media screen and (max-width: 550px) {
+  .topbar {
+    position: relative;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .presentation h1 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .presentation h2 {
+    font-size: 15px;
+  }
+
+  .elipse {
+    position: relative;
+    border: 2px solid linear-gradient(to bottom, rgba(255, 184, 0, 0.57), #fff);
+    border-radius: 100%;
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffb800, #fff);
+  }
+
+  .elipse img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .service,
+  .portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .competance div {
+    margin-top: 50px;
+  }
+  .portfolio-image img {
+    width: 100%;
+  }
+  .header-btn {
+    display: none;
+  }
+  .develop-by {
+    padding: 5px 10px;
+    font-family: Outfit_light;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+  }
+  .presentation h1 {
+    margin-top: 0;
+  }
+}
